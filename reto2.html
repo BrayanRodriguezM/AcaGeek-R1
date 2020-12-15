@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arbol de Navidad</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <h1>Árbol de Navidad </h1>
+    <i class="material-icons" style="font-size:60px;color:orange;">start</i>
+    <script>
+        let num = [0,1]
+        let cadena = '1'
+        for(var i = 0; i<19; i++){
+            let item =Math.round(Math.random()*(1-0)+0)
+            console.log(item)
+            if(i === 6 || i === 15){
+              cadena=reserva
+            }
+             document.write(`
+             <h3 class="num" style="color: green" align="center" >${cadena}</h3>
+             `)
+             cadena = cadena + num[item]
+             if(i === 4 || i === 10){
+               reserva = cadena
+             }
+             cadena = cadena + item
+       }
+       
+        document.write(`
+             <h3 class="num" style="color: brown" align="center">111000</h3>
+             <h3 class="num" style="color: brown" align="center">000111</h3>
+             <h3 class="num" style="color: brown" align="center">101101</h3>
+             `)
+             
+       
+      </script>
+      
+      <a class=n href="index.html">Pagina</a>
+</body>
+</html>
